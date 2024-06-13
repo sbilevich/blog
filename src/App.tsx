@@ -10,7 +10,7 @@ import CommentUpdateForm from "./components/CommentUpdateForm";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <CssBaseline />
       <div className="flex flex-col min-h-screen">
         <Header />
